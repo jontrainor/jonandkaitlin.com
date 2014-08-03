@@ -1,0 +1,25 @@
+/* line 2, ../sass/main.scss */
+body {
+  background-color: #ffb719;
+}
+
+/* line 6, ../sass/main.scss */
+.posterContainer {
+  height: 644px;
+  width: 494px;
+  background-color: #FFF;
+  margin: 0px auto;
+  border: solid 15px #8609B2;
+  margin: 40px auto;
+  box-shadow: -3px -3px 12px #999;
+}
+/* line 17, ../sass/main.scss */
+.posterContainer img.poster {
+  height: 600px;
+  width: 450px;
+  margin: 20px;
+  border-top: solid 2px #aaa;
+  border-left: solid 2px #aaa;
+  border-bottom: solid 2px #ccc;
+  border-right: solid 2px #ccc;
+}
