@@ -1,26 +1,67 @@
 
-body {
-	background-color:#F4EAC8
+html, body {
+	height: 100%;
+	width: 100%;
+	background-color: #432523
 }
 
-.posterContainer {
-	height: 644px;
-	width: 494px;
-	background-color: #FFF;
+// generic page styles
+.page {
+	height: 90%;
+	width: 1000px;
+	min-width: 800px;
 	margin: 0px auto;
+	padding: 40px 0px;
 
-	// frame styles
-	border:solid 15px #080822; 
-	margin:40px auto;
-	box-shadow:-3px -3px 12px #999;
+	.imageFrame {
+		float: left;
+		height: auto;
+		width: 45%;
+		background-color: #FFFFFF;
+		margin-right: 10%;
 
-	img.poster {
-		height: 600px;
-		width: 450px;
-		margin: 20px;
-		border-top:solid 2px #aaa;
-		border-left:solid 2px #aaa;
-		border-bottom:solid 2px #ccc;
-		border-right:solid 2px #ccc;
+		// frame styles
+		border:solid 15px #080822; 
+		// box-shadow:-3px -3px 12px #999;
+
+		.imageMatte {
+			background-color: #FFFFFF;
+			width: 90%;
+			height: auto;
+
+			img {
+				height: 90%;
+				width: 90%;
+				margin: 5%;
+				border-top:solid 2px #aaa;
+				border-left:solid 2px #aaa;
+				border-bottom:solid 2px #ccc;
+				border-right:solid 2px #ccc;
+			}
+		}
+	}
+
+	.infoContainer {
+		float: left;
+		height: 100%;
+		width: 40%;
+
+		&::after {
+			float: clear;
+		}
+
+		.titleCard {
+			height: 30%;
+			width: 100%;
+			background-color: #FFFFFF;
+			border: 1px black solid;
+		}
+		.infoCard {
+			height: 60%;
+			width: 100%;
+			margin-top: 10%;
+			background-color: #FFFFFF;
+			border: 1px black solid;
+		}
 	}
 }
