@@ -24,19 +24,16 @@ html, body {
 		border:solid 15px #080822; 
 		// box-shadow:-3px -3px 12px #999;
 
-		.imageMatte {
-			background-color: #FFFFFF;
-			width: 90%;
+		.imageContainer {
+			width: 100%;
 			height: auto;
 
 			img {
-				height: 90%;
-				width: 90%;
+				height: 89%;
+				width: 89%;
 				margin: 5%;
-				border-top:solid 2px #aaa;
-				border-left:solid 2px #aaa;
-				border-bottom:solid 2px #ccc;
-				border-right:solid 2px #ccc;
+				padding: 2px;
+				background: linear-gradient(to bottom left, #AAAAAA, #CCCCCC);
 			}
 		}
 	}

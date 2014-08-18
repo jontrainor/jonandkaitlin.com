@@ -23,39 +23,36 @@ html, body {
   border: solid 15px #080822;
 }
 /* line 27, ../sass/main.scss */
-.page .imageFrame .imageMatte {
-  background-color: #FFFFFF;
-  width: 90%;
+.page .imageFrame .imageContainer {
+  width: 100%;
   height: auto;
 }
-/* line 32, ../sass/main.scss */
-.page .imageFrame .imageMatte img {
-  height: 90%;
-  width: 90%;
+/* line 31, ../sass/main.scss */
+.page .imageFrame .imageContainer img {
+  height: 89%;
+  width: 89%;
   margin: 5%;
-  border-top: solid 2px #aaa;
-  border-left: solid 2px #aaa;
-  border-bottom: solid 2px #ccc;
-  border-right: solid 2px #ccc;
+  padding: 2px;
+  background: linear-gradient(to bottom left, #aaaaaa, #cccccc);
 }
-/* line 44, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 .page .infoContainer {
   float: left;
   height: 100%;
   width: 40%;
 }
-/* line 49, ../sass/main.scss */
+/* line 46, ../sass/main.scss */
 .page .infoContainer::after {
   float: clear;
 }
-/* line 53, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 .page .infoContainer .titleCard {
   height: 30%;
   width: 100%;
   background-color: #FFFFFF;
   border: 1px black solid;
 }
-/* line 59, ../sass/main.scss */
+/* line 56, ../sass/main.scss */
 .page .infoContainer .infoCard {
   height: 60%;
   width: 100%;
