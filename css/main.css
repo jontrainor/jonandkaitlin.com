@@ -1,62 +1,72 @@
-/* line 2, ../sass/main.scss */
+/* line 1, ../sass/main.scss */
 html, body {
   height: 100%;
   width: 100%;
   background-color: #432523;
 }
 
-/* line 9, ../sass/main.scss */
-.page {
-  height: 90%;
-  width: 1000px;
-  min-width: 800px;
-  margin: 0px auto;
-  padding: 40px 0px;
-}
-/* line 16, ../sass/main.scss */
-.page .imageFrame {
-  float: left;
-  height: auto;
-  width: 45%;
-  background-color: #FFFFFF;
-  margin-right: 10%;
-  border: solid 15px #080822;
-}
-/* line 27, ../sass/main.scss */
-.page .imageFrame .imageContainer {
-  width: 100%;
-  height: auto;
-}
-/* line 31, ../sass/main.scss */
-.page .imageFrame .imageContainer img {
-  height: 89%;
-  width: 89%;
-  margin: 5%;
-  padding: 2px;
-  background: linear-gradient(to bottom left, #aaaaaa, #cccccc);
-}
-/* line 41, ../sass/main.scss */
-.page .infoContainer {
-  float: left;
-  height: 100%;
-  width: 40%;
-}
-/* line 46, ../sass/main.scss */
-.page .infoContainer::after {
+/* line 7, ../sass/main.scss */
+.clear {
   float: clear;
 }
-/* line 50, ../sass/main.scss */
-.page .infoContainer .titleCard {
-  height: 30%;
-  width: 100%;
+
+/* line 11, ../sass/main.scss */
+.main {
+  max-width: 700px;
+  height: 100%;
+  margin: 0 auto;
   background-color: #FFFFFF;
-  border: 1px black solid;
 }
-/* line 56, ../sass/main.scss */
-.page .infoContainer .infoCard {
-  height: 60%;
+/* line 18, ../sass/main.scss */
+.main .section {
   width: 100%;
-  margin-top: 10%;
+  height: 100%;
   background-color: #FFFFFF;
-  border: 1px black solid;
+}
+/* line 24, ../sass/main.scss */
+.main .posterSection {
+  overflow: hidden;
+}
+/* line 27, ../sass/main.scss */
+.main .posterSection img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* line 34, ../sass/main.scss */
+.main nav {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  height: 40px;
+  margin-top: -40px;
+  background-color: #B1882E;
+}
+/* line 42, ../sass/main.scss */
+.main nav.lockedAtTop {
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+}
+/* line 50, ../sass/main.scss */
+.main .overviewSection .overviewTitle {
+  width: 100%;
+  height: 33%;
+}
+/* line 54, ../sass/main.scss */
+.main .overviewSection .overviewTitle h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 61, ../sass/main.scss */
+.main .overviewSection .overviewSummary {
+  width: 100%;
+  height: 33%;
+}
+/* line 66, ../sass/main.scss */
+.main .overviewSection .overviewGridContent {
+  width: 33%;
+  height: 33%;
+  float: left;
 }
