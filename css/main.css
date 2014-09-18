@@ -1,40 +1,28 @@
 /* line 1, ../sass/main.scss */
-html, body {
+html {
   height: 100%;
   width: 100%;
   background-color: #432523;
+  font-family: "Open Sans";
+  font-size: 14px;
 }
 
-/* line 7, ../sass/main.scss */
+/* line 9, ../sass/main.scss */
+body {
+  max-width: 700px;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+/* line 17, ../sass/main.scss */
 .clear {
   float: clear;
 }
 
-/* line 11, ../sass/main.scss */
-.main {
-  max-width: 700px;
-  height: 100%;
-  margin: 0 auto;
-  background-color: #FFFFFF;
-}
-/* line 18, ../sass/main.scss */
-.main .section {
-  width: 100%;
-  height: 100%;
-  background-color: #FFFFFF;
-}
-/* line 24, ../sass/main.scss */
-.main .posterSection {
-  overflow: hidden;
-}
-/* line 27, ../sass/main.scss */
-.main .posterSection img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-/* line 34, ../sass/main.scss */
-.main nav {
+/* line 21, ../sass/main.scss */
+nav {
   position: relative;
   z-index: 1000;
   width: 100%;
@@ -42,31 +30,59 @@ html, body {
   margin-top: -40px;
   background-color: #B1882E;
 }
-/* line 42, ../sass/main.scss */
-.main nav.lockedAtTop {
+/* line 29, ../sass/main.scss */
+nav.lockedAtTop {
   position: fixed;
   top: 0;
   margin-top: 0;
 }
-/* line 50, ../sass/main.scss */
-.main .overviewSection .overviewTitle {
+
+/* line 37, ../sass/main.scss */
+section {
   width: 100%;
-  height: 33%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  padding: 10px;
+  text-align: justify;
 }
-/* line 54, ../sass/main.scss */
-.main .overviewSection .overviewTitle h1 {
-  font-size: 30px;
-  font-weight: bold;
+/* line 46, ../sass/main.scss */
+section .sectionTitle {
+  width: 100%;
+  height: 10%;
+}
+/* line 50, ../sass/main.scss */
+section .sectionTitle h1 {
+  font-family: "Tangerine";
+  font-size: 70px;
+  line-height: 70px;
   text-align: center;
 }
-/* line 61, ../sass/main.scss */
-.main .overviewSection .overviewSummary {
+
+/* line 59, ../sass/main.scss */
+.posterSection {
+  background: url("../jonkaitlinposter.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+/* line 65, ../sass/main.scss */
+.overviewSection .overviewPhoto {
+  width: 100%;
+  height: 40%;
+  background: url("../jk1.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+/* line 72, ../sass/main.scss */
+.overviewSection .overviewSummary {
   width: 100%;
   height: 33%;
 }
-/* line 66, ../sass/main.scss */
-.main .overviewSection .overviewGridContent {
-  width: 33%;
-  height: 33%;
-  float: left;
+
+/* line 79, ../sass/main.scss */
+.eventSection .eventPhoto {
+  width: 100%;
+  height: 40%;
+  background: url("../artrevolution.jpg") center top no-repeat;
+  background-size: auto 100%;
 }

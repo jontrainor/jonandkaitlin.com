@@ -1,72 +1,85 @@
-html, body {
+html {
 	height: 100%;
 	width: 100%;
-	background-color: #432523
+	background-color: #432523;
+	font-family: "Open Sans";
+	font-size: 14px;
+}
+
+body {
+	max-width: 700px;
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+	background-color: #FFFFFF;
 }
 
 .clear {
 	float: clear;
 }
 
-.main {
-	max-width: 700px;
+nav {
+	position: relative;
+	z-index: 1000;
+	width: 100%;
+	height: 40px;
+	margin-top: -40px;
+	background-color: #B1882E;
+	
+	&.lockedAtTop {
+		position: fixed;
+		top: 0;
+		margin-top: 0;
+	}
+}
+
+// generic section
+section {
+	width: 100%;
 	height: 100%;
-	margin: 0 auto;
+	display: block;
+	overflow: hidden;
 	background-color: #FFFFFF;
+	padding: 10px;
+	text-align: justify;
 
-	// generic section
-	.section {
+	.sectionTitle {
 		width: 100%;
-		height: 100%;
-		background-color: #FFFFFF;
-	}
+		height: 10%;
 
-	.posterSection {
-		overflow: hidden;
-
-		img {
-			width: 100%;
-			height: auto;
-			display: block;
+		h1 {
+			font-family: "Tangerine";
+			font-size: 70px;
+			line-height: 70px;
+			text-align: center;
 		}
 	}
+}
 
-	nav {
-		position: relative;
-		z-index: 1000;
+.posterSection {
+	background: url('../jonkaitlinposter.jpg') center top no-repeat;
+	background-size: cover;
+}
+
+.overviewSection {
+	.overviewPhoto {
 		width: 100%;
-		height: 40px;
-		margin-top: -40px;
-		background-color: #B1882E;
-		
-		&.lockedAtTop {
-			position: fixed;
-			top: 0;
-			margin-top: 0;
-		}
+		height: 40%;
+		background: url('../jk1.jpg') center top no-repeat;
+		background-size: auto 100%;
 	}
 
-	.overviewSection {
-		.overviewTitle {
-			width: 100%;
-			height: 33%;
+	.overviewSummary {
+		width: 100%;
+		height: 33%;
+	}
+}
 
-			h1 {
-				font-size: 30px;
-				font-weight: bold;
-				text-align: center;
-			}
-		}
-
-		.overviewSummary {
-			width: 100%;
-			height: 33%;
-		}
-
-		.overviewGridContent {
-			width: 33%;
-			height: 33%;
-			float: left;
-		}
+.eventSection {
+	.eventPhoto {
+		width: 100%;
+		height: 40%;
+		background: url('../artrevolution.jpg') center top no-repeat;
+		background-size: auto 100%;
 	}
 }
