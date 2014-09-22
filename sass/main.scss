@@ -11,7 +11,7 @@ html {
 body {
 	height: 100%;
 	width: 100%;
-	background: url('../bg.jpg') center top;
+	background: url('../img/bg.jpg') center top;
 	background-size: cover;
 	margin: 0;
 	text-align: center;
@@ -91,7 +91,7 @@ section {
 
 .posterSection {
 	height: 100%;
-	background: url('../jonkaitlinposter.jpg') center top no-repeat;
+	background: url('../img/jonkaitlinposter.jpg') center top no-repeat;
 	background-size: cover;
 }
 
@@ -107,12 +107,12 @@ section {
 	}
 
 	.groomPhoto {
-		background: url('../jk1.jpg') center top no-repeat;
+		background: url('../img/jk1.jpg') center top no-repeat;
 		background-size: cover;
 	}
 
 	.bridePhoto {
-		background: url('../jk2.jpg') center top no-repeat;
+		background: url('../img/jk2.jpg') center top no-repeat;
 		background-size: cover;
 	}
 
@@ -183,7 +183,7 @@ section {
 	.cbLogo {
 		width: 320px;
 		height: 100px;
-		background: url('../crate_barrel.png') center top;
+		background: url('../img/crate_barrel.png') center top;
 		background-size: cover;
 		float: left;
 	}
@@ -191,7 +191,7 @@ section {
 	.weLogo {
 		width: 320px;
 		height: 100px;
-		background: url('../West_Elm_Logo.gif') center top;
+		background: url('../img/West_Elm_Logo.gif') center top;
 		background-size: cover;
 		float: left
 	}

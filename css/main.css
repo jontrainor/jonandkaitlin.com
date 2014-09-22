@@ -12,7 +12,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background: url("../bg.jpg") center top;
+  background: url("../img/bg.jpg") center top;
   background-size: cover;
   margin: 0;
   text-align: center;
@@ -95,7 +95,7 @@ section .name {
 /* line 92, ../sass/main.scss */
 .posterSection {
   height: 100%;
-  background: url("../jonkaitlinposter.jpg") center top no-repeat;
+  background: url("../img/jonkaitlinposter.jpg") center top no-repeat;
   background-size: cover;
 }
 
@@ -111,12 +111,12 @@ section .name {
 }
 /* line 109, ../sass/main.scss */
 .overviewSection .groomPhoto {
-  background: url("../jk1.jpg") center top no-repeat;
+  background: url("../img/jk1.jpg") center top no-repeat;
   background-size: cover;
 }
 /* line 114, ../sass/main.scss */
 .overviewSection .bridePhoto {
-  background: url("../jk2.jpg") center top no-repeat;
+  background: url("../img/jk2.jpg") center top no-repeat;
   background-size: cover;
 }
 /* line 119, ../sass/main.scss */
@@ -187,7 +187,7 @@ section .name {
 .registrySection .cbLogo {
   width: 320px;
   height: 100px;
-  background: url("../crate_barrel.png") center top;
+  background: url("../img/crate_barrel.png") center top;
   background-size: cover;
   float: left;
 }
@@ -195,7 +195,7 @@ section .name {
 .registrySection .weLogo {
   width: 320px;
   height: 100px;
-  background: url("../West_Elm_Logo.gif") center top;
+  background: url("../img/West_Elm_Logo.gif") center top;
   background-size: cover;
   float: left;
 }
