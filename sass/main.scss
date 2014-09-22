@@ -29,9 +29,19 @@ main {
 	clear: both;
 }
 
-strong {
-	// font-size: 1.2em;
-	// font-weight: bold;
+address, time {
+	display: block;
+	font-family: "Droid Seriff";
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: bold;
+}
+	
+.mapContainer {
+	width: 80%;
+	height: 400px;
+	margin: 0 auto;
+	border: 1px solid #EEEEEE;
 }
 
 nav {
@@ -127,7 +137,6 @@ section {
 }
 
 .eventSection {
-	height: 100%;
 	.eventSummary {
 		width: 100%;
 		margin: 30px auto 40px;
@@ -140,19 +149,50 @@ section {
 
 	address, time {
 		width: 43%;
-		display: block;
 		float: left;
 		margin-right: 7%;
-		font-family: "Droid Seriff";
-		font-size: 1.3em;
-		text-align: center;
-		font-weight: bold;
+		font-style: normal;
 	}
-	
-	.mapContainer {
-		width: 80%;
-		height: 400px;
-		margin: 0 auto;
-		border: 1px solid #EEEEEE;
+}
+
+.hotelSection {
+	.hotelSummary {
+		width: 100%;
+		margin: 30px auto 30px;
+
+		.shuttleTitle {
+			display: block;
+			font-family: "Droid Seriff";
+			font-size: 1.2em;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		time {
+			font-size: 1.2em;
+		}
+	}
+}
+
+.registrySection {
+	height: 100%;
+	.registrySummary {
+		margin-bottom: 30px;
+	}
+
+	.cbLogo {
+		width: 320px;
+		height: 100px;
+		background: url('../crate_barrel.png') center top;
+		background-size: cover;
+		float: left;
+	}
+
+	.weLogo {
+		width: 320px;
+		height: 100px;
+		background: url('../West_Elm_Logo.gif') center top;
+		background-size: cover;
+		float: left
 	}
 }
