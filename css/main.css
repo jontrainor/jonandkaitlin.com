@@ -20,7 +20,7 @@ body {
 
 /* line 20, ../sass/main.scss */
 main {
-  max-width: 700px;
+  max-width: 800px;
   height: 100%;
   position: relative;
   background-color: #FFFFFF;
@@ -67,11 +67,11 @@ nav.lockedAtTop {
 
 /* line 63, ../sass/main.scss */
 section {
-  width: 100%;
+  width: 88%;
   display: block;
   overflow: hidden;
   background-color: #FFFFFF;
-  padding: 10px 50px;
+  padding: 1% 6%;
   text-align: justify;
   border-bottom: 2px solid #EEEEEE;
 }
@@ -179,23 +179,29 @@ section .name {
 .registrySection {
   height: 100%;
 }
-/* line 179, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 .registrySection .registrySummary {
   margin-bottom: 30px;
 }
-/* line 183, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
+.registrySection .cbContainer, .registrySection .weContainer {
+  display: block;
+  width: 50%;
+  float: left;
+}
+/* line 190, ../sass/main.scss */
 .registrySection .cbLogo {
   width: 320px;
   height: 100px;
   background: url("../img/crate_barrel.png") center top;
   background-size: cover;
-  float: left;
+  margin: 0 auto;
 }
-/* line 191, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 .registrySection .weLogo {
   width: 320px;
   height: 100px;
   background: url("../img/West_Elm_Logo.gif") center top;
   background-size: cover;
-  float: left;
+  margin: 0 auto;
 }

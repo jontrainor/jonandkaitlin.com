@@ -18,7 +18,7 @@ body {
 }
 
 main {
-	max-width: 700px;
+	max-width: 800px;
 	height: 100%;
 	position: relative;
 	background-color: #FFFFFF;
@@ -61,11 +61,11 @@ nav {
 
 // generic section
 section {
-	width: 100%;
+	width: 88%; //account for padding
 	display: block;
 	overflow: hidden;
 	background-color: #FFFFFF;
-	padding: 10px 50px;
+	padding: 1% 6%;
 	text-align: justify;
 	border-bottom: 2px solid #EEEEEE;
 
@@ -176,8 +176,15 @@ section {
 
 .registrySection {
 	height: 100%;
+
 	.registrySummary {
 		margin-bottom: 30px;
+	}
+
+	.cbContainer, .weContainer {
+		display: block;
+		width: 50%;
+		float: left;
 	}
 
 	.cbLogo {
@@ -185,7 +192,7 @@ section {
 		height: 100px;
 		background: url('../img/crate_barrel.png') center top;
 		background-size: cover;
-		float: left;
+		margin: 0 auto;
 	}
 
 	.weLogo {
@@ -193,6 +200,6 @@ section {
 		height: 100px;
 		background: url('../img/West_Elm_Logo.gif') center top;
 		background-size: cover;
-		float: left
+		margin: 0 auto;
 	}
 }
