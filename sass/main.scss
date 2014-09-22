@@ -18,7 +18,7 @@ body {
 }
 
 main {
-	max-width: 700px;
+	max-width: 1000px;
 	height: 100%;
 	position: relative;
 	background-color: #FFFFFF;
@@ -61,11 +61,11 @@ nav {
 
 // generic section
 section {
-	width: 100%;
+	width: 88%; //account for padding
 	display: block;
 	overflow: hidden;
 	background-color: #FFFFFF;
-	padding: 10px 50px;
+	padding: 1% 6%;
 	text-align: justify;
 	border-bottom: 2px solid #EEEEEE;
 
