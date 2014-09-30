@@ -81,11 +81,12 @@ section h1, section h2, section h3 {
   width: 100%;
   font-family: "Tangerine";
   font-size: 70px;
-  line-height: 0px;
+  line-height: 70px;
   text-align: center;
   text-shadow: 3px 3px #EEEEEE;
+  margin: 20px 0;
 }
-/* line 84, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 section .name {
   font-family: "Tangerine";
   font-size: 30px;
@@ -93,14 +94,14 @@ section .name {
   text-shadow: 1px 1px #EEEEEE;
 }
 
-/* line 94, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 .posterSection {
   height: 100%;
   background: url("../img/jonkaitlinposter.jpg") center top no-repeat;
   background-size: cover;
 }
 
-/* line 101, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 .overviewSection .groomPhoto, .overviewSection .bridePhoto {
   width: 200px;
   height: 200px;
@@ -110,47 +111,47 @@ section .name {
   border: 10px solid #EEEEEE;
   box-shadow: 0 0 5px 1px #B1882E;
 }
-/* line 111, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 .overviewSection .groomPhoto {
   background: url("../img/jk1.jpg") center top no-repeat;
   background-size: cover;
 }
-/* line 116, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 .overviewSection .bridePhoto {
   background: url("../img/jk2.jpg") center top no-repeat;
   background-size: cover;
 }
-/* line 121, ../sass/main.scss */
+/* line 122, ../sass/main.scss */
 .overviewSection h3 {
   font-size: 40px;
 }
-/* line 125, ../sass/main.scss */
+/* line 126, ../sass/main.scss */
 .overviewSection .groomSummaryContainer, .overviewSection .brideSummaryContainer {
   width: 43%;
   float: left;
   margin: 0 3%;
 }
-/* line 131, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .overviewSection .groomSummary, .overviewSection .brideSummary {
   margin-top: -15px;
 }
-/* line 135, ../sass/main.scss */
+/* line 136, ../sass/main.scss */
 .overviewSection .coupleSummary {
   width: 100%;
   margin-top: 30px;
 }
 
-/* line 142, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 .eventSection .eventSummary {
   width: 100%;
   margin: 30px auto 40px;
 }
-/* line 146, ../sass/main.scss */
+/* line 147, ../sass/main.scss */
 .eventSection .eventSummary a {
   color: #555555;
   text-decoration: none;
 }
-/* line 152, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 .eventSection address, .eventSection time {
   width: 43%;
   float: left;
@@ -158,12 +159,12 @@ section .name {
   font-style: normal;
 }
 
-/* line 161, ../sass/main.scss */
+/* line 162, ../sass/main.scss */
 .hotelSection .hotelSummary {
   width: 100%;
   margin: 30px auto 30px;
 }
-/* line 165, ../sass/main.scss */
+/* line 166, ../sass/main.scss */
 .hotelSection .hotelSummary .shuttleTitle {
   display: block;
   font-family: "Droid Seriff";
@@ -171,30 +172,30 @@ section .name {
   text-align: center;
   font-weight: bold;
 }
-/* line 173, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 .hotelSection .hotelSummary .venueToHotel {
   margin-top: 20px;
 }
-/* line 177, ../sass/main.scss */
+/* line 178, ../sass/main.scss */
 .hotelSection .hotelSummary time {
   font-size: 1.2em;
 }
 
-/* line 183, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
 .registrySection {
-  height: 100%;
+  min-height: 100%;
 }
-/* line 186, ../sass/main.scss */
+/* line 187, ../sass/main.scss */
 .registrySection .registrySummary {
   margin-bottom: 30px;
 }
-/* line 190, ../sass/main.scss */
+/* line 191, ../sass/main.scss */
 .registrySection .cbContainer, .registrySection .weContainer {
   display: block;
   width: 50%;
   float: left;
 }
-/* line 196, ../sass/main.scss */
+/* line 197, ../sass/main.scss */
 .registrySection .cbLogo {
   width: 320px;
   height: 100px;
@@ -202,11 +203,32 @@ section .name {
   background-size: cover;
   margin: 0 auto;
 }
-/* line 204, ../sass/main.scss */
+/* line 205, ../sass/main.scss */
 .registrySection .weLogo {
   width: 320px;
   height: 100px;
   background: url("../img/West_Elm_Logo.gif") center top;
   background-size: cover;
   margin: 0 auto;
+}
+
+@media (max-width: 675px) {
+  /* line 216, ../sass/main.scss */
+  .registrySection .cbContainer, .registrySection .weContainer {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+}
+@media (max-width: 600px) {
+  /* line 226, ../sass/main.scss */
+  .overviewSection .groomSummaryContainer, .overviewSection .brideSummaryContainer {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  /* line 231, ../sass/main.scss */
+  .overviewSection .groomSummaryContainer {
+    margin-bottom: 30px;
+  }
 }
