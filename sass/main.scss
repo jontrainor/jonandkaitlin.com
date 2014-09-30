@@ -18,6 +18,8 @@ body {
 }
 
 main {
+	// hide main until page loads
+	visibility: hidden;	
 	max-width: 800px;
 	height: 100%;
 	position: relative;
@@ -166,6 +168,10 @@ section {
 			font-size: 1.2em;
 			text-align: center;
 			font-weight: bold;
+		}
+
+		.venueToHotel {
+			margin-top: 20px;
 		}
 
 		time {
