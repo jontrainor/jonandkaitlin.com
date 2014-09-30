@@ -171,25 +171,29 @@ section .name {
   font-weight: bold;
 }
 /* line 171, ../sass/main.scss */
+.hotelSection .hotelSummary .venueToHotel {
+  margin-top: 20px;
+}
+/* line 175, ../sass/main.scss */
 .hotelSection .hotelSummary time {
   font-size: 1.2em;
 }
 
-/* line 177, ../sass/main.scss */
+/* line 181, ../sass/main.scss */
 .registrySection {
   height: 100%;
 }
-/* line 180, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
 .registrySection .registrySummary {
   margin-bottom: 30px;
 }
-/* line 184, ../sass/main.scss */
+/* line 188, ../sass/main.scss */
 .registrySection .cbContainer, .registrySection .weContainer {
   display: block;
   width: 50%;
   float: left;
 }
-/* line 190, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 .registrySection .cbLogo {
   width: 320px;
   height: 100px;
@@ -197,7 +201,7 @@ section .name {
   background-size: cover;
   margin: 0 auto;
 }
-/* line 198, ../sass/main.scss */
+/* line 202, ../sass/main.scss */
 .registrySection .weLogo {
   width: 320px;
   height: 100px;
