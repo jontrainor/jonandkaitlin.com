@@ -18,6 +18,8 @@ body {
 }
 
 main {
+	// hide main until page loads
+	visibility: hidden;	
 	max-width: 800px;
 	height: 100%;
 	position: relative;

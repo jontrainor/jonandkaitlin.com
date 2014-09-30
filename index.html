@@ -7,9 +7,20 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Seriff">
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 	<link rel="stylesheet" href="css/main.css">
+	<style>
+		.no-js #spinner {
+			display: none;
+		}
+		.no-js main {
+			visibility: visible;
+		}
+	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="lib/spin.min.js"></script>
 </head>
-<body><main>
+<body>
+<div id="spinner"></div>
+<main>
 	<section class='posterSection'></section>
 	<!-- <nav></nav> -->
 
@@ -123,6 +134,14 @@
 		<div class="clear"></div>
 	</section>
 </main></body>
-<script>
+<script type="text/javascript">
+	var spinner = new Spinner({color: '#B1882E'}).spin();
+	var spinnerHolder = document.getElementById('spinner');
+	spinnerHolder.appendChild(spinner.el);
+	document.addEventListener( "DOMContentLoaded", function() {
+			spinnerHolder.style.display = "none";
+			var main = document.getElementsByTagName('main')[0];
+			main.style.visibility = "visible";
+	}, false );
 </script>
 </html>
