@@ -76,9 +76,10 @@ section {
 		font-family: "Tangerine";
 		// font-family: "Great Vibes";
 		font-size: 70px;
-		line-height: 0px;
+		line-height: 70px;
 		text-align: center;
 		text-shadow: 3px 3px #EEEEEE;
+		margin: 20px 0;
 	}
 
 	.name {
@@ -181,7 +182,7 @@ section {
 }
 
 .registrySection {
-	height: 100%;
+	min-height: 100%;
 
 	.registrySummary {
 		margin-bottom: 30px;
@@ -207,5 +208,28 @@ section {
 		background: url('../img/West_Elm_Logo.gif') center top;
 		background-size: cover;
 		margin: 0 auto;
+	}
+}
+
+@media (max-width: 675px) {
+	.registrySection {
+		.cbContainer, .weContainer {
+			display: block;
+			width: 100%;
+			float: none;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.overviewSection {
+		.groomSummaryContainer, .brideSummaryContainer {
+			width: 100%;
+			float: none;
+			margin: 0;
+		}
+		.groomSummaryContainer {
+			margin-bottom: 30px;
+		}
 	}
 }
