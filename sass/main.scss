@@ -11,7 +11,7 @@ html {
 body {
 	height: 100%;
 	width: 100%;
-	background: url('../img/bg.jpg') center top;
+	background: url('../img/bg_opt.jpg') center top;
 	background-size: cover;
 	margin: 0;
 	text-align: center;
@@ -47,17 +47,33 @@ address, time {
 }
 
 nav {
-	position: relative;
+	position: absolute;
 	z-index: 1000;
+	left: 0;
+	bottom: 0;
 	width: 100%;
 	height: 40px;
-	margin-top: -40px;
 	background-color: #B1882E;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: "Tangerine";
+	font-size: 2em;
+	line-height: 40px;
 	
 	&.lockedAtTop {
 		position: fixed;
 		top: 0;
-		margin-top: 0;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		list-style-type: none;
+		float: left;
+		width: 25%;
 	}
 }
 
@@ -69,7 +85,6 @@ section {
 	background-color: #FFFFFF;
 	padding: 1% 6%;
 	text-align: justify;
-	border-bottom: 2px solid #EEEEEE;
 
 	h1,h2,h3 {
 		width: 100%;
@@ -93,12 +108,15 @@ section {
 }
 
 .posterSection {
+	width: 100%;
 	height: 100%;
 	background: url('../img/jonkaitlinposter.jpg') center top no-repeat;
 	background-size: cover;
+	padding: 0;
 }
 
 .overviewSection {
+	background-color: #F8F8F8;
 	.groomPhoto, .bridePhoto {
 		width: 200px;
 		height: 200px;
@@ -110,12 +128,12 @@ section {
 	}
 
 	.groomPhoto {
-		background: url('../img/jk1.jpg') center top no-repeat;
+		background: url('../img/jk1_opt.jpg') center top no-repeat;
 		background-size: cover;
 	}
 
 	.bridePhoto {
-		background: url('../img/jk2.jpg') center top no-repeat;
+		background: url('../img/jk2_opt.jpg') center top no-repeat;
 		background-size: cover;
 	}
 
@@ -140,6 +158,7 @@ section {
 }
 
 .eventSection {
+	background-color: #F0F0F0;
 	.eventSummary {
 		width: 100%;
 		margin: 30px auto 40px;
@@ -159,6 +178,7 @@ section {
 }
 
 .hotelSection {
+	background-color: #E8E8E8;
 	.hotelSummary {
 		width: 100%;
 		margin: 30px auto 30px;
@@ -182,6 +202,7 @@ section {
 }
 
 .registrySection {
+	background-color: #E0E0E0;
 	min-height: 100%;
 
 	.registrySummary {
@@ -197,15 +218,15 @@ section {
 	.cbLogo {
 		width: 320px;
 		height: 100px;
-		background: url('../img/crate_barrel.png') center top;
+		background: url('../img/crate_barrel.jpg') center top;
 		background-size: cover;
 		margin: 0 auto;
 	}
 
 	.weLogo {
 		width: 320px;
-		height: 100px;
-		background: url('../img/West_Elm_Logo.gif') center top;
+		height: 125px;
+		background: url('../img/West_Elm_Logo.jpg') center top;
 		background-size: cover;
 		margin: 0 auto;
 	}
