@@ -12,7 +12,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background: url("../img/bg.jpg") center top;
+  background: url("../img/bg_opt.jpg") center top;
   background-size: cover;
   margin: 0;
   text-align: center;
@@ -74,9 +74,8 @@ section {
   background-color: #FFFFFF;
   padding: 1% 6%;
   text-align: justify;
-  border-bottom: 2px solid #EEEEEE;
 }
-/* line 74, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 section h1, section h2, section h3 {
   width: 100%;
   font-family: "Tangerine";
@@ -86,7 +85,7 @@ section h1, section h2, section h3 {
   text-shadow: 3px 3px #EEEEEE;
   margin: 20px 0;
 }
-/* line 85, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 section .name {
   font-family: "Tangerine";
   font-size: 30px;
@@ -94,13 +93,17 @@ section .name {
   text-shadow: 1px 1px #EEEEEE;
 }
 
-/* line 95, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 .posterSection {
   height: 100%;
   background: url("../img/jonkaitlinposter.jpg") center top no-repeat;
   background-size: cover;
 }
 
+/* line 100, ../sass/main.scss */
+.overviewSection {
+  background-color: #F8F8F8;
+}
 /* line 102, ../sass/main.scss */
 .overviewSection .groomPhoto, .overviewSection .bridePhoto {
   width: 200px;
@@ -113,12 +116,12 @@ section .name {
 }
 /* line 112, ../sass/main.scss */
 .overviewSection .groomPhoto {
-  background: url("../img/jk1.jpg") center top no-repeat;
+  background: url("../img/jk1_opt.jpg") center top no-repeat;
   background-size: cover;
 }
 /* line 117, ../sass/main.scss */
 .overviewSection .bridePhoto {
-  background: url("../img/jk2.jpg") center top no-repeat;
+  background: url("../img/jk2_opt.jpg") center top no-repeat;
   background-size: cover;
 }
 /* line 122, ../sass/main.scss */
@@ -141,17 +144,21 @@ section .name {
   margin-top: 30px;
 }
 
-/* line 143, ../sass/main.scss */
+/* line 142, ../sass/main.scss */
+.eventSection {
+  background-color: #F0F0F0;
+}
+/* line 144, ../sass/main.scss */
 .eventSection .eventSummary {
   width: 100%;
   margin: 30px auto 40px;
 }
-/* line 147, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
 .eventSection .eventSummary a {
   color: #555555;
   text-decoration: none;
 }
-/* line 153, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 .eventSection address, .eventSection time {
   width: 43%;
   float: left;
@@ -160,11 +167,15 @@ section .name {
 }
 
 /* line 162, ../sass/main.scss */
+.hotelSection {
+  background-color: #E8E8E8;
+}
+/* line 164, ../sass/main.scss */
 .hotelSection .hotelSummary {
   width: 100%;
   margin: 30px auto 30px;
 }
-/* line 166, ../sass/main.scss */
+/* line 168, ../sass/main.scss */
 .hotelSection .hotelSummary .shuttleTitle {
   display: block;
   font-family: "Droid Seriff";
@@ -172,48 +183,49 @@ section .name {
   text-align: center;
   font-weight: bold;
 }
-/* line 174, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 .hotelSection .hotelSummary .venueToHotel {
   margin-top: 20px;
 }
-/* line 178, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 .hotelSection .hotelSummary time {
   font-size: 1.2em;
 }
 
-/* line 184, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 .registrySection {
+  background-color: #E0E0E0;
   min-height: 100%;
 }
-/* line 187, ../sass/main.scss */
+/* line 190, ../sass/main.scss */
 .registrySection .registrySummary {
   margin-bottom: 30px;
 }
-/* line 191, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 .registrySection .cbContainer, .registrySection .weContainer {
   display: block;
   width: 50%;
   float: left;
 }
-/* line 197, ../sass/main.scss */
+/* line 200, ../sass/main.scss */
 .registrySection .cbLogo {
   width: 320px;
   height: 100px;
-  background: url("../img/crate_barrel.png") center top;
+  background: url("../img/crate_barrel.jpg") center top;
   background-size: cover;
   margin: 0 auto;
 }
-/* line 205, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 .registrySection .weLogo {
   width: 320px;
-  height: 100px;
-  background: url("../img/West_Elm_Logo.gif") center top;
+  height: 125px;
+  background: url("../img/West_Elm_Logo.jpg") center top;
   background-size: cover;
   margin: 0 auto;
 }
 
 @media (max-width: 675px) {
-  /* line 216, ../sass/main.scss */
+  /* line 219, ../sass/main.scss */
   .registrySection .cbContainer, .registrySection .weContainer {
     display: block;
     width: 100%;
@@ -221,13 +233,13 @@ section .name {
   }
 }
 @media (max-width: 600px) {
-  /* line 226, ../sass/main.scss */
+  /* line 229, ../sass/main.scss */
   .overviewSection .groomSummaryContainer, .overviewSection .brideSummaryContainer {
     width: 100%;
     float: none;
     margin: 0;
   }
-  /* line 231, ../sass/main.scss */
+  /* line 234, ../sass/main.scss */
   .overviewSection .groomSummaryContainer {
     margin-bottom: 30px;
   }

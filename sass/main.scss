@@ -11,7 +11,7 @@ html {
 body {
 	height: 100%;
 	width: 100%;
-	background: url('../img/bg.jpg') center top;
+	background: url('../img/bg_opt.jpg') center top;
 	background-size: cover;
 	margin: 0;
 	text-align: center;
@@ -69,7 +69,6 @@ section {
 	background-color: #FFFFFF;
 	padding: 1% 6%;
 	text-align: justify;
-	border-bottom: 2px solid #EEEEEE;
 
 	h1,h2,h3 {
 		width: 100%;
@@ -99,6 +98,7 @@ section {
 }
 
 .overviewSection {
+	background-color: #F8F8F8;
 	.groomPhoto, .bridePhoto {
 		width: 200px;
 		height: 200px;
@@ -110,12 +110,12 @@ section {
 	}
 
 	.groomPhoto {
-		background: url('../img/jk1.jpg') center top no-repeat;
+		background: url('../img/jk1_opt.jpg') center top no-repeat;
 		background-size: cover;
 	}
 
 	.bridePhoto {
-		background: url('../img/jk2.jpg') center top no-repeat;
+		background: url('../img/jk2_opt.jpg') center top no-repeat;
 		background-size: cover;
 	}
 
@@ -140,6 +140,7 @@ section {
 }
 
 .eventSection {
+	background-color: #F0F0F0;
 	.eventSummary {
 		width: 100%;
 		margin: 30px auto 40px;
@@ -159,6 +160,7 @@ section {
 }
 
 .hotelSection {
+	background-color: #E8E8E8;
 	.hotelSummary {
 		width: 100%;
 		margin: 30px auto 30px;
@@ -182,6 +184,7 @@ section {
 }
 
 .registrySection {
+	background-color: #E0E0E0;
 	min-height: 100%;
 
 	.registrySummary {
@@ -197,15 +200,15 @@ section {
 	.cbLogo {
 		width: 320px;
 		height: 100px;
-		background: url('../img/crate_barrel.png') center top;
+		background: url('../img/crate_barrel.jpg') center top;
 		background-size: cover;
 		margin: 0 auto;
 	}
 
 	.weLogo {
 		width: 320px;
-		height: 100px;
-		background: url('../img/West_Elm_Logo.gif') center top;
+		height: 125px;
+		background: url('../img/West_Elm_Logo.jpg') center top;
 		background-size: cover;
 		margin: 0 auto;
 	}
