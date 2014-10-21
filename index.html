@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Seriff">
-	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+	<link rel="stylesheet" href="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 	<link rel="stylesheet" href="css/main.css">
 	<style>
 		.no-js #spinner {
@@ -22,7 +22,15 @@
 <div id="spinner"></div>
 <main>
 	<section class='posterSection'></section>
-	<!-- <nav></nav> -->
+	<!-- <nav id="nav"> -->
+	<!-- 	<ul> -->
+	<!-- 		<li>The Couple</li> -->
+	<!-- 		<li>Event</li> -->
+	<!-- 		<li>Hotel</li> -->
+	<!-- 		<li>Registry</li> -->
+	<!-- 		<div class="clear"> -->
+	<!-- 	</ul> -->
+	<!-- </nav> -->
 
 	<section class='overviewSection'>
 		<h1>Jon and Kaitlin's Wedding</h1>
@@ -139,9 +147,40 @@
 	var spinnerHolder = document.getElementById('spinner');
 	spinnerHolder.appendChild(spinner.el);
 	document.addEventListener( "DOMContentLoaded", function() {
+			// onload, make page visible
 			spinnerHolder.style.display = "none";
 			var main = document.getElementsByTagName('main')[0];
 			main.style.visibility = "visible";
+			/*
+			// lock navbar to top
+			var navbar = document.getElementById('nav');
+			var navOriginalTop = navbar.getBoundingClientRect().top;
+			var lockedClassName = 'lockedAtTop';
+			window.onscroll = function() {
+				navbarBounding = navbar.getBoundingClientRect();
+
+				// reset navOriginalTop in case page was not loaded at top
+				if(window.scrollY === 0) {
+					navOriginalTop = navbarBounding.top;
+				}
+
+				// check if navbar should be locked
+				if(window.scrollY >= navOriginalTop) {
+					var navClass = navbar.className;
+					if(navClass.search(lockedClassName) < 0) {	
+						navbar.className = 'lockedAtTop';
+					}
+				}
+
+				// check if navbar should be unlocked
+				else if(window.scrollY < navOriginalTop) {
+					var navClass = navbar.className;
+					if(navClass.search('lockedAtTop') >= 0) {
+						navbar.className = '';
+					}
+				}
+			};
+			*/
 	}, false );
 </script>
 </html>
