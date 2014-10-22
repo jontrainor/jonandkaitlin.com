@@ -22,17 +22,18 @@
 <div id="spinner"></div>
 <main>
 	<section class='posterSection'></section>
-	<!-- <nav id="nav"> -->
-	<!-- 	<ul> -->
-	<!-- 		<li>The Couple</li> -->
-	<!-- 		<li>Event</li> -->
-	<!-- 		<li>Hotel</li> -->
-	<!-- 		<li>Registry</li> -->
-	<!-- 		<div class="clear"> -->
-	<!-- 	</ul> -->
-	<!-- </nav> -->
+	<nav id="nav">
+		<ul>
+			<li><a href="#overview">The Couple</a></li>
+			<li><a href="#event">Event</a></li>
+			<li><a href="#hotel">Hotel</a></li>
+			<li><a href="#registry">Registry</a></li>
+			<div class="clear">
+		</ul>
+	</nav>
 
 	<section class='overviewSection'>
+		<div class="anchorLink" id="overview"></div>
 		<h1>Jon and Kaitlin's Wedding</h1>
 		<div class="brideSummaryContainer">
 			<div class="bridePhoto"></div>
@@ -66,6 +67,7 @@
 	</section>
 
 	<section class="eventSection">
+		<div class="anchorLink" id="event"></div>
 		<h2>Wedding Events</h2>
 		<address>
 			<div class="streetAddress">
@@ -98,6 +100,7 @@
 		</div>
 	</section>
 	<section class="hotelSection">
+		<div class="anchorLink" id="hotel"></div>
 		<h2>Accommodations</h2>
 		<address>
 			<div class="hotelName">
@@ -132,6 +135,7 @@
 		</div>
 	</section>
 	<section class="registrySection">
+		<div class="anchorLink" id="registry"></div>
 		<h2>Registry</h2>
 		<div class="registrySummary">
 			We are registered through Crate & Barrel and West Elm for items that we would like to help make our house a home. 
@@ -151,7 +155,7 @@
 			spinnerHolder.style.display = "none";
 			var main = document.getElementsByTagName('main')[0];
 			main.style.visibility = "visible";
-			/*
+
 			// lock navbar to top
 			var navbar = document.getElementById('nav');
 			var navOriginalTop = navbar.getBoundingClientRect().top;
@@ -180,7 +184,6 @@
 					}
 				}
 			};
-			*/
 	}, false );
 </script>
 </html>
