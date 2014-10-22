@@ -156,29 +156,34 @@
 			var main = document.getElementsByTagName('main')[0];
 			main.style.visibility = "visible";
 
-			// lock navbar to top
-			var navOriginalTop;
-			var navbar = document.getElementById('nav');
-			var lockedClassName = 'lockedAtTop';
-			window.onscroll = function() {
-				navOriginalTop = window.innerHeight - 40;
+			var mediaQuery = window.matchMedia( "(max-width: 768px)" );	
+			// mediaQuery exists and screen is less than 768px width
+			if(mediaQuery && !mediaQuery.matches) {
+				// lock navbar to top
+				var navOriginalTop;
+				var navbar = document.getElementById('nav');
+				var lockedClassName = 'lockedAtTop';
+				window.onscroll = function() {
+					navOriginalTop = window.innerHeight - 40;
 
-				// check if navbar should be locked
-				if(window.scrollY >= navOriginalTop) {
-					var navClass = navbar.className;
-					if(navClass.search(lockedClassName) < 0) {	
-						navbar.className = 'lockedAtTop';
+					// check if navbar should be locked
+					if(window.scrollY >= navOriginalTop) {
+						var navClass = navbar.className;
+						if(navClass.search(lockedClassName) < 0) {	
+							navbar.className = 'lockedAtTop';
+						}
 					}
-				}
 
-				// check if navbar should be unlocked
-				else if(window.scrollY < navOriginalTop) {
-					var navClass = navbar.className;
-					if(navClass.search('lockedAtTop') >= 0) {
-						navbar.className = '';
+					// check if navbar should be unlocked
+					else if(window.scrollY < navOriginalTop) {
+						var navClass = navbar.className;
+						if(navClass.search('lockedAtTop') >= 0) {
+							navbar.className = '';
+						}
 					}
-				}
-			};
+
+				};
+			}
 	}, false );
 </script>
 </html>
