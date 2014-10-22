@@ -157,16 +157,11 @@
 			main.style.visibility = "visible";
 
 			// lock navbar to top
+			var navOriginalTop;
 			var navbar = document.getElementById('nav');
-			var navOriginalTop = navbar.getBoundingClientRect().top;
 			var lockedClassName = 'lockedAtTop';
 			window.onscroll = function() {
-				navbarBounding = navbar.getBoundingClientRect();
-
-				// reset navOriginalTop in case page was not loaded at top
-				if(window.scrollY === 0) {
-					navOriginalTop = navbarBounding.top;
-				}
+				navOriginalTop = window.innerHeight - 40;
 
 				// check if navbar should be locked
 				if(window.scrollY >= navOriginalTop) {
