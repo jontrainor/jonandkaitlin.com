@@ -85,7 +85,7 @@ nav li a {
   text-align: center;
   color: #FFFFFF;
   font-family: "Tangerine";
-  font-size: 2em;
+  font-size: 1.95em;
   text-decoration: none;
 }
 
@@ -121,7 +121,7 @@ section .anchorLink {
   top: -40px;
 }
 
-/* line 124, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
 .posterSection {
   width: 100%;
   height: 100%;
@@ -130,11 +130,11 @@ section .anchorLink {
   padding: 0;
 }
 
-/* line 132, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 .overviewSection {
   background-color: #F8F8F8;
 }
-/* line 134, ../sass/main.scss */
+/* line 133, ../sass/main.scss */
 .overviewSection .groomPhoto, .overviewSection .bridePhoto {
   width: 200px;
   height: 200px;
@@ -144,51 +144,51 @@ section .anchorLink {
   border: 10px solid #EEEEEE;
   box-shadow: 0 0 5px 1px #B1882E;
 }
-/* line 144, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 .overviewSection .groomPhoto {
   background: url("../img/jk1_opt.jpg") center top no-repeat;
   background-size: cover;
 }
-/* line 149, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
 .overviewSection .bridePhoto {
   background: url("../img/jk2_opt.jpg") center top no-repeat;
   background-size: cover;
 }
-/* line 154, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 .overviewSection h3 {
   font-size: 40px;
 }
-/* line 158, ../sass/main.scss */
+/* line 157, ../sass/main.scss */
 .overviewSection .groomSummaryContainer, .overviewSection .brideSummaryContainer {
   width: 43%;
   float: left;
   margin: 0 3%;
 }
-/* line 164, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 .overviewSection .groomSummary, .overviewSection .brideSummary {
   margin-top: -15px;
 }
-/* line 168, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .overviewSection .coupleSummary {
   width: 100%;
   margin-top: 30px;
 }
 
-/* line 174, ../sass/main.scss */
+/* line 173, ../sass/main.scss */
 .eventSection {
   background-color: #F0F0F0;
 }
-/* line 176, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .eventSection .eventSummary {
   width: 100%;
   margin: 30px auto 40px;
 }
-/* line 180, ../sass/main.scss */
+/* line 179, ../sass/main.scss */
 .eventSection .eventSummary a {
   color: #555555;
   text-decoration: none;
 }
-/* line 186, ../sass/main.scss */
+/* line 185, ../sass/main.scss */
 .eventSection address, .eventSection time {
   width: 43%;
   float: left;
@@ -196,16 +196,16 @@ section .anchorLink {
   font-style: normal;
 }
 
-/* line 194, ../sass/main.scss */
+/* line 193, ../sass/main.scss */
 .hotelSection {
   background-color: #E8E8E8;
 }
-/* line 196, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 .hotelSection .hotelSummary {
   width: 100%;
   margin: 30px auto 30px;
 }
-/* line 200, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
 .hotelSection .hotelSummary .shuttleTitle {
   display: block;
   font-family: "Droid Seriff";
@@ -213,31 +213,31 @@ section .anchorLink {
   text-align: center;
   font-weight: bold;
 }
-/* line 208, ../sass/main.scss */
+/* line 207, ../sass/main.scss */
 .hotelSection .hotelSummary .venueToHotel {
   margin-top: 20px;
 }
-/* line 212, ../sass/main.scss */
+/* line 211, ../sass/main.scss */
 .hotelSection .hotelSummary time {
   font-size: 1.2em;
 }
 
-/* line 218, ../sass/main.scss */
+/* line 217, ../sass/main.scss */
 .registrySection {
   background-color: #E0E0E0;
   min-height: 100%;
 }
-/* line 222, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 .registrySection .registrySummary {
   margin-bottom: 30px;
 }
-/* line 226, ../sass/main.scss */
+/* line 225, ../sass/main.scss */
 .registrySection .cbContainer, .registrySection .weContainer {
   display: block;
   width: 50%;
   float: left;
 }
-/* line 232, ../sass/main.scss */
+/* line 231, ../sass/main.scss */
 .registrySection .cbLogo {
   width: 320px;
   height: 100px;
@@ -245,7 +245,7 @@ section .anchorLink {
   background-size: cover;
   margin: 0 auto;
 }
-/* line 240, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 .registrySection .weLogo {
   width: 320px;
   height: 125px;
@@ -254,8 +254,14 @@ section .anchorLink {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  /* line 250, ../sass/main.scss */
+  .anchorLink {
+    top: auto;
+  }
+}
 @media (max-width: 675px) {
-  /* line 251, ../sass/main.scss */
+  /* line 257, ../sass/main.scss */
   .registrySection .cbContainer, .registrySection .weContainer {
     display: block;
     width: 100%;
@@ -263,14 +269,21 @@ section .anchorLink {
   }
 }
 @media (max-width: 600px) {
-  /* line 261, ../sass/main.scss */
+  /* line 267, ../sass/main.scss */
   .overviewSection .groomSummaryContainer, .overviewSection .brideSummaryContainer {
     width: 100%;
     float: none;
     margin: 0;
   }
-  /* line 266, ../sass/main.scss */
+  /* line 272, ../sass/main.scss */
   .overviewSection .groomSummaryContainer {
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 280, ../sass/main.scss */
+  section h1, section h2, section h3 {
+    font-size: 55px;
+    line-height: 55px;
   }
 }
