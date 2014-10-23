@@ -247,8 +247,11 @@ section {
 
 // reset anchorLink so it doesn't account for the nav bar height
 @media (max-width: 768px) {
-	.anchorLink {
-		top: auto;
+	section {
+		.anchorLink {
+			position: auto;
+			top: auto;
+		}
 	}
 }
 
