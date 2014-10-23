@@ -255,13 +255,14 @@ section .anchorLink {
 }
 
 @media (max-width: 768px) {
-  /* line 250, ../sass/main.scss */
-  .anchorLink {
+  /* line 251, ../sass/main.scss */
+  section .anchorLink {
+    position: auto;
     top: auto;
   }
 }
 @media (max-width: 675px) {
-  /* line 257, ../sass/main.scss */
+  /* line 260, ../sass/main.scss */
   .registrySection .cbContainer, .registrySection .weContainer {
     display: block;
     width: 100%;
@@ -269,19 +270,19 @@ section .anchorLink {
   }
 }
 @media (max-width: 600px) {
-  /* line 267, ../sass/main.scss */
+  /* line 270, ../sass/main.scss */
   .overviewSection .groomSummaryContainer, .overviewSection .brideSummaryContainer {
     width: 100%;
     float: none;
     margin: 0;
   }
-  /* line 272, ../sass/main.scss */
+  /* line 275, ../sass/main.scss */
   .overviewSection .groomSummaryContainer {
     margin-bottom: 30px;
   }
 }
 @media (max-width: 400px) {
-  /* line 280, ../sass/main.scss */
+  /* line 283, ../sass/main.scss */
   section h1, section h2, section h3 {
     font-size: 55px;
     line-height: 55px;
