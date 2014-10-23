@@ -79,7 +79,7 @@ nav {
 			text-align: center;
 			color: #FFFFFF;
 			font-family: "Tangerine";
-			font-size: 2em;
+			font-size: 1.95em;
 			text-decoration: none;
 		}
 	}
@@ -245,6 +245,13 @@ section {
 	}
 }
 
+// reset anchorLink so it doesn't account for the nav bar height
+@media (max-width: 768px) {
+	.anchorLink {
+		top: auto;
+	}
+}
+
 @media (max-width: 675px) {
 	.registrySection {
 		.cbContainer, .weContainer {
@@ -264,6 +271,15 @@ section {
 		}
 		.groomSummaryContainer {
 			margin-bottom: 30px;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	section {
+		h1,h2,h3 {
+			font-size: 55px;
+			line-height: 55px;
 		}
 	}
 }
